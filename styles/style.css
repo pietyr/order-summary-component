@@ -18,4 +18,175 @@ html {
 
 body {
 	font-family: "Red Hat Display", sans-serif;
+	font-weight: 500;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--pale-blue);
+	background-image: url(../images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+}
+
+img {
+	display: block;
+}
+
+article {
+	background-color: #fff;
+	max-width: 28.125rem;
+	border-radius: 1rem;
+	overflow: hidden;
+}
+
+.summary {
+	text-align: center;
+	margin: 0;
+	padding: 3rem;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 1.75rem;
+	margin-top: 0;
+	color: var(--dark-blue);
+	margin-bottom: 1rem;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--desaturated-blue);
+	margin-top: 1rem;
+	margin-bottom: 1.25rem;
+}
+
+.selected-plan {
+	background-color: var(--very-pale-blue);
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+.selected-plan div {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1.5rem;
+	margin-right: auto;
+}
+
+.plan {
+	font-weight: 700;
+	color: var(--dark-blue);
+}
+
+.price {
+	color: var(--desaturated-blue);
+}
+
+.selected-plan a {
+	font-weight: 700;
+	color: var(--bright-blue);
+}
+
+button {
+	font-family: inherit;
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 100%;
+	margin: 0;
+	overflow: visible;
+	text-transform: none;
+	border: none;
+	-webkit-appearance: button;
+	cursor: pointer;
+
+	padding: 1.125rem;
+}
+
+.payment {
+	margin-top: 2rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+	background-color: var(--bright-blue);
+	color: var(--very-pale-blue);
+}
+
+.cancel {
+	background-color: #fff;
+	margin-top: 1rem;
+	margin-bottom: 0;
+	color: var(--desaturated-blue);
+}
+
+@media (max-width: 500px) {
+	article {
+		width: calc(100vw - 3rem);
+	}
+
+	header img {
+		width: 100%;
+	}
+
+	.summary {
+		padding: 1.5rem;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	.selected-plan {
+		padding: 1rem;
+		font-size: 0.875rem;
+	}
+}
+
+@media (max-width: 350px) {
+	.selected-plan div {
+		margin-left: 0.5rem;
+	}
+}
+
+@media (max-height: 600px) {
+	.summary {
+		padding: 1rem 1.5rem;
+	}
+
+	.summary h1 {
+		margin-bottom: 0.5rem;
+	}
+
+	.summary p {
+		margin-top: 0.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.selected-plan {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.payment {
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.cancel {
+		margin-top: 0.5rem;
+	}
 }

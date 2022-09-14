@@ -4,6 +4,7 @@
 	--very-pale-blue: hsl(225, 100%, 98%);
 	--desaturated-blue: hsl(224, 23%, 55%);
 	--dark-blue: hsl(223, 47%, 23%);
+	--hover: hsl(244, 84%, 69%);
 }
 
 html {
@@ -188,5 +189,20 @@ button {
 
 	.cancel {
 		margin-top: 0.5rem;
+	}
+}
+
+@media (hover: hover) {
+	.selected-plan a:hover {
+		text-decoration: none;
+		color: var(--hover);
+	}
+
+	.payment:hover {
+		background-color: var(--hover);
+	}
+
+	.cancel:hover {
+		color: var(--dark-blue);
 	}
 }

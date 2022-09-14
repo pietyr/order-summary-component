@@ -130,6 +130,10 @@ button {
 }
 
 @media (max-width: 500px) {
+	body {
+		background-image: url(../images/pattern-background-mobile.svg);
+	}
+
 	article {
 		width: calc(100vw - 3rem);
 	}
